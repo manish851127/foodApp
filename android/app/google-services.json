@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "895351884308",
+    "project_id": "foodauth-8234f",
+    "storage_bucket": "foodauth-8234f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:895351884308:android:47fa1a7df8e9428e6ff501",
+        "android_client_info": {
+          "package_name": "com.example.ecommerce_fontend"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZSDVchckU5m-q6_rdjKBjSL06H4KfvB4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
