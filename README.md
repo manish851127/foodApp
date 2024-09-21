@@ -1,4 +1,4 @@
-# ecommerce_fontend
+# food_app_fontend
 
 A new Flutter project.
 
