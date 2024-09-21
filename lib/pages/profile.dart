@@ -1,5 +1,5 @@
 import 'package:ecommerce_fontend/auth/login.dart';
-import 'package:ecommerce_fontend/services/providers/provider_service.dart';
+import 'package:ecommerce_fontend/services/providers/auth_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -15,7 +15,7 @@ class _ProfileState extends State<Profile> {
   Widget build(BuildContext context) {
     return Center(
          child: TextButton(onPressed: () {
-          ProviderState providerState=Provider.of<ProviderState>(context,listen: false);
+          AuthProvider providerState=Provider.of<AuthProvider>(context,listen: false);
           providerState.signOut();
           Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=> Login()));
 

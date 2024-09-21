@@ -1,6 +1,6 @@
 import 'package:ecommerce_fontend/auth/foreget_password_page.dart';
 import 'package:ecommerce_fontend/auth/login.dart';
-import 'package:ecommerce_fontend/services/providers/provider_service.dart';
+import 'package:ecommerce_fontend/services/providers/auth_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
@@ -152,7 +152,7 @@ class _SignUpState extends State<SignUp> {
   }
   
   void registerUser(String email, String password)async {
-    ProviderState providerState=Provider.of<ProviderState>(context,listen: false);
+    AuthProvider providerState=Provider.of<AuthProvider>(context,listen: false);
     try{
       if(await providerState.createUserAccount(email, password)){
         Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>Login()));
